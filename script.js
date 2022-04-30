@@ -15,6 +15,8 @@ function setGradient () {
   body.style.background = "linear-gradient(to right, " + color1.value + "," + color2.value + ")"
   console.log(color1.value)
   console.log(body.style)
+
+  css.textContent = body.style.background + ";"
 }
 
 color1.addEventListener("input", setGradient)
